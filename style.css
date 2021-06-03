@@ -1,0 +1,45 @@
+/* Reset CSS default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+  margin: 0px 50px;
+}
+
+.box {
+  border: 3px solid black;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.box--1 {
+  align-items: center;
+}
+
+.box--2 {
+  align-items: flex-end;
+}
+.box--3 {
+  align-items: flex-start;
+}
